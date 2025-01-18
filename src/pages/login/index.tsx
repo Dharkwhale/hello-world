@@ -1,17 +1,17 @@
 // ** React Imports
 
-
 // ** Next Imports
 
 import Image from 'next/image'
 
 // ** MUI Components
+import { Box } from '@mui/system'
 import CardContent from '@mui/material/CardContent'
 import Button from '@mui/material/Button'
 import Checkbox from '@mui/material/Checkbox'
 import Typography from '@mui/material/Typography'
 import IconButton from '@mui/material/IconButton'
-import { styled, useTheme } from '@mui/material/styles'
+import { styled } from '@mui/material/styles'
 import InputAdornment from '@mui/material/InputAdornment'
 import MuiCard, { CardProps } from '@mui/material/Card'
 import MuiFormControlLabel, { FormControlLabelProps } from '@mui/material/FormControlLabel'
@@ -30,7 +30,6 @@ import { yupResolver } from '@hookform/resolvers/yup'
 
 // ** Hooks
 import { useAuth } from 'src/hooks/useAuth'
-import { useSettings } from 'src/@core/hooks/useSettings'
 
 // ** Configs
 import themeConfig from 'src/configs/themeConfig'
@@ -38,22 +37,14 @@ import themeConfig from 'src/configs/themeConfig'
 // ** Layout Import
 import BlankLayout from 'src/@core/layouts/BlankLayout'
 
-
 // ** Demo Imports
 import AuthIllustrationV1Wrapper from 'src/views/pages/auth/AuthIllustrationV1Wrapper'
 
-
-
 // ** Styled Components
-
-
-
 
 const Card = styled(MuiCard)<CardProps>(({ theme }) => ({
   [theme.breakpoints.up('sm')]: { width: '25rem' }
 }))
-
-
 
 const FormControlLabel = styled(MuiFormControlLabel)<FormControlLabelProps>(({ theme }) => ({
   '& .MuiFormControlLabel-label': {
@@ -82,13 +73,8 @@ const LoginPage = () => {
 
   // ** Hooks
   const auth = useAuth()
- 
-  
-  const { settings } = useSettings()
-  
 
   // ** Vars
-  
 
   const {
     control,
@@ -110,8 +96,6 @@ const LoginPage = () => {
       })
     })
   }
-
- 
 
   return (
     <Box className='content-center'>
