@@ -5,8 +5,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Box, { BoxProps } from '@mui/material/Box'
 import companylogo from 'assests/logo.svg'
-import { styled, useTheme } from '@mui/material/styles'
-import Typography, { TypographyProps } from '@mui/material/Typography'
+import { styled } from '@mui/material'
+
+
 
 // ** Type Import
 import { LayoutProps } from 'src/@core/layouts/types'

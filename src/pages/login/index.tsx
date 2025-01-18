@@ -2,7 +2,7 @@
 
 
 // ** Next Imports
-import Link from 'next/link'
+
 import Image from 'next/image'
 
 // ** MUI Components
@@ -11,8 +11,6 @@ import Button from '@mui/material/Button'
 import Checkbox from '@mui/material/Checkbox'
 import Typography from '@mui/material/Typography'
 import IconButton from '@mui/material/IconButton'
-import Box, { BoxProps } from '@mui/material/Box'
-import useMediaQuery from '@mui/material/useMediaQuery'
 import { styled, useTheme } from '@mui/material/styles'
 import InputAdornment from '@mui/material/InputAdornment'
 import MuiCard, { CardProps } from '@mui/material/Card'
@@ -40,7 +38,9 @@ import themeConfig from 'src/configs/themeConfig'
 // ** Layout Import
 import BlankLayout from 'src/@core/layouts/BlankLayout'
 
+
 // ** Demo Imports
+import AuthIllustrationV1Wrapper from 'src/views/pages/auth/AuthIllustrationV1Wrapper'
 
 
 
@@ -82,13 +82,13 @@ const LoginPage = () => {
 
   // ** Hooks
   const auth = useAuth()
-  const theme = useTheme()
+ 
   
   const { settings } = useSettings()
   
 
   // ** Vars
-  const { skin } = settings
+  
 
   const {
     control,
