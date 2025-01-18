@@ -4,10 +4,8 @@ import Link from 'next/link'
 // ** MUI Imports
 import Image from 'next/image'
 import Box, { BoxProps } from '@mui/material/Box'
-import companylogo from 'assests/logo.svg'
+import companylogo from 'src/assests/logo.svg'
 import { styled } from '@mui/material'
-
-
 
 // ** Type Import
 import { LayoutProps } from 'src/@core/layouts/types'
@@ -15,7 +13,6 @@ import { LayoutProps } from 'src/@core/layouts/types'
 // ** Custom Icon Import
 
 // ** Configs
-
 
 interface Props {
   navHover: boolean
@@ -40,8 +37,6 @@ const MenuHeaderWrapper = styled(Box)<BoxProps>(({ theme }) => ({
   minHeight: theme.mixins.toolbar.minHeight
 }))
 
-
-
 const LinkStyled = styled(Link)({
   display: 'flex',
   alignItems: 'center',
@@ -50,18 +45,11 @@ const LinkStyled = styled(Link)({
 
 const VerticalNavHeader = (props: Props) => {
   // ** Props
-  const {
-    navHover,
-    settings,
-    collapsedNavWidth,
-    navigationBorderWidth,
-    navMenuBranding: userNavMenuBranding,
-  } = props
+  const { navHover, settings, collapsedNavWidth, navigationBorderWidth, navMenuBranding: userNavMenuBranding } = props
 
   // ** Hooks & Vars
-  
-  const { navCollapsed } = settings
 
+  const { navCollapsed } = settings
 
   const menuHeaderPaddingLeft = () => {
     if (navCollapsed && !navHover) {

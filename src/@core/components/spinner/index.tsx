@@ -1,12 +1,11 @@
 // ** MUI Imports
 import Image from 'next/image'
 import Box, { BoxProps } from '@mui/material/Box'
-import companylogo from 'assests/logo.svg'
+import companylogo from 'src/assests/logo.svg'
 import CircularProgress from '@mui/material/CircularProgress'
 
 const FallbackSpinner = ({ sx }: { sx?: BoxProps['sx'] }) => {
   // ** Hook
- 
 
   return (
     <Box
