@@ -1,13 +1,12 @@
 // ** Next Import
 import Link from 'next/link'
 
-
 // ** MUI Imports
 import Image from 'next/image'
 import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
-import companylogo from 'assests/logo.svg'
+import companylogo from 'src/assests/logo.svg'
 import { styled, useTheme } from '@mui/material/styles'
 
 // ** Configs
