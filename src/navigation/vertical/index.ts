@@ -3,12 +3,10 @@ import { VerticalNavItemsType } from 'src/@core/layouts/types'
 
 const navigation = (): VerticalNavItemsType => {
   return [
-   
-    
     {
       title: 'Activities',
       icon: 'tabler:road',
-      path: '/activities'
+      path: '/Activities'
     },
     {
       title: 'Hotels',
@@ -44,14 +42,7 @@ const navigation = (): VerticalNavItemsType => {
       title: 'Vacation Packages',
       icon: 'tabler:box',
       path: '/vacation-packages'
-    },
-  
-
-    
-   
-   
-   
-    
+    }
   ]
 }
 
