@@ -3,7 +3,6 @@ import Link from 'next/link'
 
 // ** MUI Imports
 import Image from 'next/image'
-import IconButton from '@mui/material/IconButton'
 import Box, { BoxProps } from '@mui/material/Box'
 import companylogo from 'assests/logo.svg'
 import { styled, useTheme } from '@mui/material/styles'
@@ -13,10 +12,9 @@ import Typography, { TypographyProps } from '@mui/material/Typography'
 import { LayoutProps } from 'src/@core/layouts/types'
 
 // ** Custom Icon Import
-import Icon from 'src/@core/components/icon'
 
 // ** Configs
-import themeConfig from 'src/configs/themeConfig'
+
 
 interface Props {
   navHover: boolean
@@ -41,11 +39,7 @@ const MenuHeaderWrapper = styled(Box)<BoxProps>(({ theme }) => ({
   minHeight: theme.mixins.toolbar.minHeight
 }))
 
-const HeaderTitle = styled(Typography)<TypographyProps>({
-  fontWeight: 700,
-  lineHeight: '24px',
-  transition: 'opacity .25s ease-in-out, margin .25s ease-in-out'
-})
+
 
 const LinkStyled = styled(Link)({
   display: 'flex',
@@ -56,23 +50,17 @@ const LinkStyled = styled(Link)({
 const VerticalNavHeader = (props: Props) => {
   // ** Props
   const {
-    hidden,
     navHover,
     settings,
-    saveSettings,
     collapsedNavWidth,
-    toggleNavVisibility,
     navigationBorderWidth,
-    menuLockedIcon: userMenuLockedIcon,
     navMenuBranding: userNavMenuBranding,
-    menuUnlockedIcon: userMenuUnlockedIcon
   } = props
 
   // ** Hooks & Vars
-  const theme = useTheme()
+  
   const { navCollapsed } = settings
 
-  const menuCollapsedStyles = navCollapsed && !navHover ? { opacity: 0 } : { opacity: 1 }
 
   const menuHeaderPaddingLeft = () => {
     if (navCollapsed && !navHover) {

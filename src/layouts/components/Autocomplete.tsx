@@ -148,11 +148,7 @@ const defaultSuggestionsData: DefaultSuggestionsType[] = [
         suggestion: 'Autocomplete',
         link: '/forms/form-elements/autocomplete'
       },
-      {
-        icon: 'tabler:layout-grid',
-        suggestion: 'Table',
-        link: '/tables/mui'
-      },
+     
       {
         icon: 'tabler:calendar-event',
         suggestion: 'Date Pickers',
@@ -363,7 +359,7 @@ const AutocompleteComponent = ({ hidden, settings }: Props) => {
   // ** Hooks & Vars
   const theme = useTheme()
   const router = useRouter()
-  const { layout } = settings
+  
   const wrapper = useRef<HTMLDivElement>(null)
   const fullScreenDialog = useMediaQuery(theme.breakpoints.down('sm'))
 
