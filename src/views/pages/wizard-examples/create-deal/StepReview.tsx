@@ -119,7 +119,7 @@ const ReviewComplete = () => {
             border: theme => `1px solid ${theme.palette.divider}`
           }}
         >
-          <img height={230} alt='review-illustration' src='/images/pages/create-deal-review-complete.png' />
+          
         </Box>
       </Grid>
     </Grid>

@@ -96,7 +96,7 @@ const RegisterMultiSteps = () => {
           </Box>
           <RegisterMultiStepsIllustration
             alt='register-multi-steps-illustration'
-            src='/images/pages/auth-v2-register-multi-steps-illustration.png'
+            
           />
           <FooterIllustrationsV2
             height={350}
