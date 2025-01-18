@@ -78,14 +78,11 @@ const AuthProvider = ({ children }: Props) => {
         params.rememberMe
           ? window.localStorage.setItem(authConfig.storageTokenKeyName, response.data.accessToken)
           : null
-        const returnUrl = router.query.returnUrl
 
         setUser({ ...response.data.userData })
         params.rememberMe ? window.localStorage.setItem('userData', JSON.stringify(response.data.userData)) : null
 
-        const redirectURL = returnUrl && returnUrl !== '/' ? returnUrl : '/'
-
-        router.replace(redirectURL as string)
+        router.push('/activities')
       })
 
       .catch(err => {

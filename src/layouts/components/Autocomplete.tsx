@@ -25,7 +25,7 @@ import axios from 'axios'
 
 // ** Types Imports
 import { AppBarSearchType } from 'src/@fake-db/types'
-import { Settings } from 'src/@core/context/settingsContext'
+
 
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
@@ -38,7 +38,7 @@ import themeConfig from 'src/configs/themeConfig'
 
 interface Props {
   hidden: boolean
-  settings: Settings
+
 }
 
 interface DefaultSuggestionsProps {
@@ -353,7 +353,7 @@ const DefaultSuggestions = ({ setOpenDialog }: DefaultSuggestionsProps) => {
   )
 }
 
-const AutocompleteComponent = ({ hidden, settings }: Props) => {
+const AutocompleteComponent = ({ hidden }: Props) => {
   // ** States
   const [isMounted, setIsMounted] = useState<boolean>(false)
   const [searchValue, setSearchValue] = useState<string>('')
@@ -363,7 +363,7 @@ const AutocompleteComponent = ({ hidden, settings }: Props) => {
   // ** Hooks & Vars
   const theme = useTheme()
   const router = useRouter()
-  const { layout } = settings
+
   const wrapper = useRef<HTMLDivElement>(null)
   const fullScreenDialog = useMediaQuery(theme.breakpoints.down('sm'))
 

@@ -6,7 +6,7 @@ import Image from 'next/image'
 import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
-import companylogo from 'src/assests/logo.svg'
+
 import { styled, useTheme } from '@mui/material/styles'
 
 // ** Configs
@@ -46,7 +46,7 @@ const BlankLayoutAppBar = () => {
         }}
       >
         <LinkStyled href='/'>
-          <Image src={companylogo} alt='logo' width={80} />
+          <Image src='logo.svg' alt='logo' width={80} height={40} />
 
           <Typography variant='h4' sx={{ ml: 2.5, fontWeight: 700, lineHeight: '24px' }}>
             {themeConfig.templateName}

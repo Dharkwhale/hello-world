@@ -2,7 +2,6 @@
 import { styled } from '@mui/material/styles'
 import Box, { BoxProps } from '@mui/material/Box'
 
-// ** Styled Components
 const AuthIllustrationV1Wrapper = styled(Box)<BoxProps>(({ theme }) => ({
   width: '100%',
   maxWidth: 400,

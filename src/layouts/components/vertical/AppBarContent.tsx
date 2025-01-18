@@ -6,15 +6,6 @@ import Button from '@mui/material/Button'
 import Divider from '@mui/material/Divider'
 
 // ** Icon Imports
-import HomeIcon from 'src/assests/home.svg'
-import DashboardIcon from 'src/assests/dashboard.svg'
-import AccountBalanceWalletIcon from 'src/assests/wallet.svg'
-import NotificationsIcon from 'src/assests/notification.svg'
-import PlanIcon from 'src/assests/plan.svg'
-import AddIcon from 'src/assests/create.svg'
-
-import CartsIcon from 'src/assests/carts.svg'
-import comissionIcon from 'src/assests/comission.svg'
 
 // ** Type Import
 import { Settings } from 'src/@core/context/settingsContext'
@@ -33,17 +24,17 @@ interface Props {
 }
 
 const navItemsBeforeSubscribe = [
-  { icon: HomeIcon, label: 'Home' },
-  { icon: DashboardIcon, label: 'Dashboard' },
-  { icon: AccountBalanceWalletIcon, label: 'Wallet' },
-  { icon: PlanIcon, label: 'Plan a trip' },
-  { icon: comissionIcon, label: 'Commission for life' }
+  { icon: '/home.svg', label: 'Home' },
+  { icon: '/dashboard.svg', label: 'Dashboard' },
+  { icon: '/wallet.svg', label: 'Wallet' },
+  { icon: '/plan.svg', label: 'Plan a trip' },
+  { icon: '/comission.svg', label: 'Commission for life' }
 ]
 
 const navItemsAfterSubscribe = [
-  { icon: NotificationsIcon, label: 'Notification' },
-  { icon: CartsIcon, label: 'Cart' },
-  { icon: AddIcon, label: 'Create' }
+  { icon: '/notification.svg', label: 'Notification' },
+  { icon: '/carts.svg', label: 'Cart' },
+  { icon: '/comission.svg', label: 'Create' }
 ]
 
 const AppBarContent = (props: Props) => {
